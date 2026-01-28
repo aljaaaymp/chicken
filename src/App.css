@@ -288,6 +288,7 @@ body { background-color: #000; color: white; font-family: 'Inter', sans-serif; o
   transform: translateY(-2px);
 }
 
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .why-grid-fancy {

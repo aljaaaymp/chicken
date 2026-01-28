@@ -66,12 +66,27 @@ function App() {
         </div>
       </section>
 
-      {/* 5. THE CLIP */}
+{/* 5. THE CLIP */}
       <section className="section-full">
         <div className="content-box">
-          <h2 className="why-card-title" style={{fontSize: '40px'}}>THE CLIP</h2>
+          <h2 style={{fontFamily: 'impact, sans-serif', textTransform: 'uppercase', fontSize: '40px', letterSpacing: '2px'}}>THE CLIP</h2>
+          
+          {/* Added the requested content below */}
+          <p style={{opacity: 0.5, margin: '15px 0 30px', lineHeight: '1.6'}}>
+            This clip has lived on the internet for years.<br/>
+            It speaks for itself.
+          </p>
+
           <div className="video-container">
-             <iframe width="100%" height="450" src="https://www.youtube.com/embed/QhMo4WlBmGM" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+             <iframe 
+               width="100%" 
+               height="450" 
+               src="https://www.youtube.com/embed/QhMo4WlBmGM" 
+               title="YouTube video player" 
+               frameBorder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+               allowFullScreen>
+             </iframe>
           </div>
         </div>
       </section>
