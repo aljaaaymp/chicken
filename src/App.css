@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=Inter:wght@300;400;700;900&display=swap");
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background-color: #000; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+
+/* --- HERO SECTION --- */
+.hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.bg-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3); z-index: -1; }
+.title { font-family: "Playfair Display", serif; font-size: clamp(48px, 10vw, 110px); text-transform: uppercase; letter-spacing: -2px; line-height: 0.9; }
+
+/* --- SECTION WRAPPERS --- */
+.section-full { 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 80px 20px; 
+  background-color: #000; 
+}
+
+/* --- THE MAIN CARD (THE BOX) --- */
+.content-box {
+  background-color: #1a1c20; 
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 80px 40px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 50px 100px rgba(0,0,0,0.6);
+}
+
+/* --- TEXT STYLES --- */
+.blue-label { color: #4dc9f0; font-size: 11px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; display: block; }
+.section-header-italic { font-family: "Playfair Display", serif; font-style: italic; font-size: clamp(32px, 5vw, 55px); margin-bottom: 40px; }
+.main-quote { font-family: "Playfair Display", serif; font-style: italic; font-size: clamp(22px, 4vw, 34px); line-height: 1.4; color: rgba(255,255,255,0.9); }
+.highlight-blue { color: #4dc9f0; font-weight: 700; }
+.quote-mark { font-size: 40px; color: rgba(255,255,255,0.2); margin-bottom: -10px; display: block; font-family: serif; }
+
+/* --- INNER SUB-CARDS --- */
+.sub-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.card-num { color: #4dc9f0; font-weight: 800; font-size: 14px; display: block; margin-bottom: 10px; }
+
+/* --- WHY IT WORKS GRID --- */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+}
+.why-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 20px; padding: 35px; text-align: left; }
+.why-card-title { font-weight: 900; font-size: 20px; text-transform: uppercase; margin-bottom: 12px; }
+.why-card-text { font-size: 15px; line-height: 1.6; opacity: 0.6; }
+
+/* --- VIDEO & BUTTONS --- */
+.video-container { width: 100%; border-radius: 15px; overflow: hidden; border: 1px solid #333; margin-top: 30px; }
+.ca-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); padding: 12px 25px; border-radius: 50px; font-family: monospace; cursor: pointer; display: inline-block; font-size: 13px; color: rgba(255,255,255,0.7); }
+.buy-btn { background: #fff; color: #000; padding: 18px 45px; border-radius: 50px; font-weight: 900; text-decoration: none; margin-top: 40px; display: inline-block; }
+
+/* Ensure the section-full uses flex-direction column to stack contents correctly */
+.section-full { 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 80px 20px; 
+  background-color: #000; 
+}
+
+/* --- SOCIAL LINKS --- */
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social-icon {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4dc9f0;
+  border-color: #4dc9f0;
+  background: rgba(77, 201, 240, 0.05);
+}
+
+/* --- FIXED BACKGROUND VIDEO --- */
+.bg-video-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.25); /* Darkened so text remains readable */
+  z-index: -1; /* Stays behind all content */
+}
+
+/* --- UPDATE SECTIONS --- */
+.section-full { 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 100px 20px; 
+  background-color: transparent; /* Remove solid black to see the video */
+}
+
+/* --- THE MAIN CARD (Keep the charcoal color for contrast) --- */
+.content-box {
+  background-color: rgba(26, 28, 32, 0.9); /* Added slight transparency for a glass look */
+  backdrop-filter: blur(10px); /* Optional: adds a nice blur to the video behind the box */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 80px 40px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 50px 100px rgba(0,0,0,0.6);
+}
+
+/* Ensure the Buy section at the bottom also shows the video */
+.buy-section-box {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- UPDATED FANCY BOXES --- */
+.content-box {
+  /* Semi-transparent charcoal with a blur effect */
+  background: rgba(26, 28, 32, 0.7); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* The "Inner Glow" border */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  
+  padding: 80px 40px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  
+  /* Soft outer shadow to separate from background video */
+  box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+/* Subtle lift effect when scrolling or hovering */
+.content-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(77, 201, 240, 0.3); /* Subtle blue glow on hover */
+}
+
+/* --- FANCY SUB-CARDS (Inside the boxes) --- */
+.sub-card {
+  background: linear-gradient(
+    145deg, 
+    rgba(255, 255, 255, 0.05) 0%, 
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: left;
+  margin-bottom: 25px;
+  transition: background 0.3s ease;
+}
+
+.sub-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* --- ADDING A VIGNETTE TO THE VIDEO --- */
+.bg-video-fixed::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* --- FANCY WHY IT WORKS GRID --- */
+.why-grid-fancy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.why-card-fancy {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: left;
+  overflow: hidden; /* For the grain effect */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* The "Fancy" Hover lift and blue glow */
+.why-card-fancy:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(77, 201, 240, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Film Grain Texture Overlay for each card */
+.why-card-fancy::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.why-card-title-fancy {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.why-card-text-fancy {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Centers the single Twitter link */
+  margin-top: 40px;
+}
+
+.social-icon {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px 30px; /* Slightly wider for the community link */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.social-icon:hover {
+  color: #4dc9f0;
+  border-color: #4dc9f0;
+  background: rgba(77, 201, 240, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .why-grid-fancy {
+    grid-template-columns: 1fr;
+  }
+}
+/* Rest of the CSS remains the same as provided in previous update */
+@media (max-width: 768px) { .why-grid { grid-template-columns: 1fr; } }
