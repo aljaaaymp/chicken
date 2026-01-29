@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 function App() {
-  const ca = "CwRGD8RBzXtrn2LSWCgGCZsFzkieyG7k2i5nYLtjr3ps";
+  const ca = "EwcVckR7G28Hzzg4XxBnEC3uEYjgKx9kyLQBsbLHpump";
 
   return (
     <div>
@@ -20,7 +20,7 @@ function App() {
       <section className="hero" style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}>
         <div className="content">
           <p style={{letterSpacing: '5px', opacity: 0.6, fontSize: '11px', marginBottom: '20px'}}>WERNER HERZOG, 2014</p>
-          <h1 className="title" style={{textShadow: '0 0 30px rgba(0,0,0,0.5)'}}>STUPID<br/>CHICKEN</h1>
+          <h1 className="title" style={{textShadow: '0 0 30px rgba(0,0,0,0.5)'}}>RETARDED<br/>CHICKEN</h1>
           <p style={{fontWeight: 900, fontSize: '24px', letterSpacing: '4px', margin: '20px 0'}}>$CHICKEN</p>
           <div className="ca-box" onClick={() => {navigator.clipboard.writeText(ca); alert("Copied!")}}>CA: {ca}</div>
         </div>
@@ -140,7 +140,7 @@ function App() {
           <p className="blue-label" style={{color: 'white', opacity: 0.5}}>The Abyss is calling.</p>
           
           <a 
-            href="https://pump.fun/coin/CwRGD8RBzXtrn2LSWCgGCZsFzkieyG7k2i5nYLtjr3ps" 
+            href="https://pump.fun/coin/EwcVckR7G28Hzzg4XxBnEC3uEYjgKx9kyLQBsbLHpump" 
             target="_blank" 
             rel="noreferrer" 
             className="buy-btn"
@@ -150,7 +150,7 @@ function App() {
 
           <div className="social-links">
             <a 
-              href="https://x.com/i/communities/2016503626001207535" 
+              href="https://x.com/i/communities/2015369247288176917" 
               target="_blank" 
               rel="noreferrer" 
               className="social-icon"
@@ -160,7 +160,7 @@ function App() {
           </div>
           
           <p style={{marginTop: '60px', fontSize: '10px', opacity: 0.2, letterSpacing: '2px'}}>
-            © 2026 STUPID CHICKEN. ALL RIGHTS RESERVED.
+            © 2026 RETARDED CHICKEN. ALL RIGHTS RESERVED.
           </p>
         </div>
       </section>
