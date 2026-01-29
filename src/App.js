@@ -14,7 +14,8 @@ function App() {
   loop 
   muted 
   playsInline 
-/>      <div className="bg-overlay" /> {/* Extra layer for contrast if needed */}
+/>
+ <div className="bg-overlay" /> {/* Extra layer for contrast if needed */}
 
       {/* 1. HERO */}
       <section className="hero" style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}>
