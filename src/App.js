@@ -57,8 +57,8 @@ function App() {
       {/* 4. THE ABYSS QUOTE */}
       <section className="section-full">
         <div className="content-box">
-          <h2 className="main-quote" style={{fontSize: 'clamp(24px, 4vw, 36px)'}}>"Look into the eyes of a chicken and you will see real stupidity."</h2>
-          <h2 className="main-quote">"A kind of bottomless stupidity. A fiendish stupidity."</h2>
+          <h2 className="main-quote" style={{fontSize: 'clamp(24px, 4vw, 36px)'}}>"A retarded chicken doesn’t think… it just exists."</h2>
+          <h2 className="main-quote">"One look into the eyes of a retarded chicken tells you everything you need to know."</h2>
           <p style={{ opacity: 0.5, margin: '30px 0' }}>— Werner Herzog</p>
           <div style={{marginTop: '40px', paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,0.05)'}}>
             <p style={{marginBottom: '10px', opacity: 0.6}}>Not confusion. Not innocence.</p>
